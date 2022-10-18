@@ -1,0 +1,72 @@
+[
+    {
+        "id" : "FIR1660381407463",
+        "nombre" : "David",
+        "apellidoPaterno" : "Figueroa",
+        "apellidoMaterno" : "Rodriguez",
+        "genero" : "Masculino",
+        "rfc" : "ABCDEFGHIJK",
+        "telCasa" : 4775247306,
+        "telMovil" : 4775247306,
+        "correo" : "david.figueroar0777@gmail.com",
+        "usuario" : "Davis",
+        "password" : "123",
+        "estatus" : "Activo"
+    },
+    {
+        "id" : "VAG1660381362076",
+        "nombre" : "Paulo",
+        "apellidoPaterno" : "Valadez",
+        "apellidoMaterno" : "Gomez",
+        "genero" : "Masculino",
+        "rfc" : "ABCDEFGHIJK",
+        "telCasa" : 4771234567,
+        "telMovil" : 4771234567,
+        "correo" : "pualo123@gmail.com",
+        "usuario" : "Pualo",
+        "password" : "america",
+        "estatus" : "Activo"
+    },
+    {
+        "id" : "ULM1660381421065",
+        "nombre" : "Daiana",
+        "apellidoPaterno" : "Ulloa",
+        "apellidoMaterno" : "Mendoza",
+        "genero" : "Femenino",
+        "rfc" : "ABCDEFGHIJK",
+        "telCasa" : 4771234567,
+        "telMovil" : 4771234567,
+        "correo" : "daiprincess123@gmail.com",
+        "usuario" : "Dai",
+        "password" : "novio",
+        "estatus" : "Activo"
+    },
+    {
+        "id" : "CEQ1660381436315",
+        "nombre" : "Maximiliano",
+        "apellidoPaterno" : "Ceballos",
+        "apellidoMaterno" : "Quintana",
+        "genero" : "Masculino",
+        "rfc" : "ABCDEFGHIJK",
+        "telCasa" : 4771234567,
+        "telMovil" : 4771234567,
+        "correo" : "matscool123@gmail.com",
+        "usuario" : "Maximus",
+        "password" : "eau",
+        "estatus" : "Activo"
+    },
+    {
+        "id" : "RAB1660381447373",
+        "nombre" : "Carlos",
+        "apellidoPaterno" : "Ramírez",
+        "apellidoMaterno" : "Bello",
+        "genero" : "Masculino",
+        "rfc" : "RAB56098765432",
+        "telCasa" : 4771234567,
+        "telMovil" : 4771234567,
+        "correo" : "matscool123@gmail.com",
+        "usuario" : "CarlitosTevez",
+        "password" : "sisoy3",
+        "estatus" : "Activo"
+    }
+]

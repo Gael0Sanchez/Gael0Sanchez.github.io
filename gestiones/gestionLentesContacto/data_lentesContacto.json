@@ -1,0 +1,56 @@
+[
+    {
+        "id" : 1,
+        "tipo" : "Graduacion",
+        "nombre" : "Lente contacto 1",
+        "marca" : "Nike",
+        "color" : "Verde",
+        "queratometria" : "0.50",
+        "fotografia" : "https://m.media-amazon.com/images/I/81YnpqD0+cL._AC_SY355_.jpg",
+        "estatus" : "Activo"
+    },
+
+    {
+        "id" : 2,
+        "tipo" : "Estetico",
+        "nombre" : "Lente contacto 2",
+        "marca" : "Oliva",
+        "color" : "Azul",
+        "queratometria" : "25",
+        "fotografia" : "https://m.media-amazon.com/images/I/81YnpqD0+cL._AC_SY355_.jpg",
+        "estatus" : "Activo"
+    },
+
+    {
+        "id" : 3,
+        "tipo" : "Estetico",
+        "nombre" : "Lente contacto 3",
+        "marca" : "Jonson",
+        "color" : "Verde",
+        "queratometria" : "30",
+        "fotografia" : "https://www.realiris.com/wp-content/uploads/2019/10/hidrocor_gem_-_jade1-1.jpg",
+        "estatus" : "Activo"
+    },
+
+    {
+        "id" : 4,
+        "tipo" : "Graduacion",
+        "nombre" : "Lente contacto 4",
+        "marca" : "Adidas",
+        "color" : "Verde",
+        "queratometria" : "40.0",
+        "fotografia" : "https://cf.shopee.com.mx/file/4fdca6ac6a7826967e906c27d6cccfcd",
+        "estatus" : "Activo"
+    },
+
+    {
+        "id" : 5,
+        "tipo" : "Estetico",
+        "nombre" : "Lente contacto 5",
+        "marca" : "Charly",
+        "color" : "Gris",
+        "queratometria" : "43.5",
+        "fotografia" : "https://http2.mlstatic.com/D_NQ_NP_735675-MLM49349985315_032022-W.jpg",
+        "estatus" : "Activo"
+    }
+]

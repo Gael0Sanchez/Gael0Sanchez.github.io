@@ -1,0 +1,72 @@
+[
+    {
+        "id" : "OQ-1660382108900",
+        "nombre" : "lentes1",
+        "marca" : "Olivia",
+        "modelo" : "AKI08",
+        "color" : "negro",
+        "descripcion" : "lentes circulares",
+        "dimensiones" : "20 x 30",
+        "precioCompra" : 1000,
+        "precioVenta" : 1650,
+        "existencias":8,
+        "fotografia":"https://cf.shopee.com.mx/file/96dc8326037d3387ad6c33ff9fcc82ff",
+        "estatus" : "Activo"
+    },
+    {
+        "id" : "OQ-1660382108901",
+       "nombre" : "lentes2",
+        "marca" : "Foli",
+        "modelo" : "AHI5",
+        "color" : "azul",
+        "descripcion" : "lentes cuadrados",
+        "dimensiones" : "20 x 10",
+        "precioCompra" : 700,
+        "precioVenta" : 1300,
+        "existencias":20,
+        "fotografia":"https://mujercountry.biz/wp-content/uploads/2013/03/Lotus-azul.jpg",
+        "estatus" : "Activo"
+    },
+    {
+        "id" : "OQ-1660382108902",
+        "nombre" : "lentes3",
+        "marca" : "Gucci",
+        "modelo" : "IJN88",
+        "color" : "negro",
+        "descripcion" : "lentes con cristales",
+        "dimensiones" : "20 x 30",
+        "precioCompra" : 20000,
+        "precioVenta" : 25000,
+        "existencias":1,
+        "fotografia":"https://media.gucci.com/style/DarkGray_Center_0_0_490x490/1658939409/491408_J0740_1112_002_100_0000_Light-Gafas-de-Sol-con-Montura-Redonda-de-Acetato-con-Estrella.jpg",
+        "estatus" : "Activo"
+    },
+    {
+        "id" : "OQ-1660382108903",
+       "nombre" : "lentes4",
+        "marca" : "Steven",
+        "modelo" : "AJK6",
+        "color" : "rojos",
+        "descripcion" : "lentes circulares",
+        "dimensiones" : "20 x 30",
+        "precioCompra" : 2500,
+        "precioVenta" : 4000,
+        "existencias":2,
+        "fotografia":"https://www.dhresource.com/0x0/f2/albu/g9/M01/46/29/rBVaVV7UeYWAKPgOAACx4jutKJQ53.jpeg",
+        "estatus" : "Activo"
+    },
+    {
+        "id" : "OQ-1660382108904",
+       "nombre" : "lentes5",
+        "marca" : "Gucci",
+        "modelo" : "RGB512",
+        "color" : "rojos",
+        "descripcion" : "lentes de sol",
+        "dimensiones" : "20 x 40",
+        "precioCompra" : 2500,
+        "precioVenta" : 4000,
+        "existencias":1,
+        "fotografia":"https://img-cdn1.cdnsbg.com/1200/1/10/352369_1599491024690.jpg",
+        "estatus" : "Activo"
+    }
+]

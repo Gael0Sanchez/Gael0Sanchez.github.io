@@ -1,0 +1,47 @@
+[
+    {
+        "id" : 1,
+        "nombre":"Sujetador",
+        "marca":"Hanker shop",
+        "precio_compra":1550,
+        "precio_venta":2100,
+        "existencias":5,
+        "estatus":"Activo"
+    },
+    {
+        "id" : 2,
+        "nombre":"Limpiador",
+        "marca":"Salud digna",
+        "precio_compra":15,
+        "precio_venta":35,
+        "existencias":50,
+        "estatus":"Activo"
+    },
+    {
+        "id" : 3,
+        "nombre":"Trapo",
+        "marca":"Gucci",
+        "precio_compra":50,
+        "precio_venta":120,
+        "existencias":20,
+        "estatus":"Activo"
+    },
+    {
+        "id" : 4,
+        "nombre":"Protector",
+        "marca":"Puluz",
+        "precio_compra":300,
+        "precio_venta":535,
+        "existencias":15,
+        "estatus":"Activo"
+    },
+    {
+        "id" : 5,
+        "nombre":"Retenedor",
+        "marca":"Ray Ban",
+        "precio_compra":670,
+        "precio_venta":1150,
+        "existencias":10,
+        "estatus":"Activo"
+    }
+]

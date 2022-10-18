@@ -1,0 +1,16 @@
+[
+    {
+        "usuario" : "Chucho Benitez",
+        "password" : "12345678"
+    },
+
+    {
+        "usuario" : "Avelardo123",
+        "password" : "13579135"
+    },
+
+    {
+        "usuario" : "Pancho@12",
+        "password" : "87654321"
+    }
+]

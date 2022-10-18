@@ -1,0 +1,52 @@
+[
+    {
+        "id":1,
+        "nombre":"Renu Fresh",
+        "marca":"Bausch Lomb",
+        "descripcion":"Para lentes de contacto. 500ml. Solución esteril.",
+        "precio_compra":200,
+        "precio_venta":262.0,
+        "existencias":20,
+        "estatus":"Activo"
+    },
+    {
+        "id":2,
+        "nombre":"Bio True",
+        "marca":"Bausch Lomb",
+        "descripcion":"Para lentes de contacto. 300ml.",
+        "precio_compra":198,
+        "precio_venta":260,
+        "existencias":29,
+        "estatus":"Activo"
+    },
+    {
+        "id":3,
+        "nombre":"Simplus",
+        "marca":"Bausch Lomb incorporated",
+        "descripcion":"Para lentes de contacto rígidos y de gas permeables. Multipropósito. 105ml.",
+        "precio_compra":106,
+        "precio_venta":166.0,
+        "existencias":4,
+        "estatus":"Activo"
+    },
+    {
+        "id":4,
+        "nombre":"Desinfectante Opti-free",
+        "marca":"Alcon",
+        "descripcion":"Multipropósito. 300ml.",
+        "precio_compra":155,
+        "precio_venta":215.0,
+        "existencias":17,
+        "estatus":"Activo"
+    },
+    {
+        "id":5,
+        "nombre":"Desinfectante Opti-Free Replenish",
+        "marca":"Alcon",
+        "descripcion":"Multipropósito. 120ml.",
+        "precio_compra":100,
+        "precio_venta":122.0,
+        "existencias":82,
+        "estatus":"Activo"
+    }
+]

@@ -1,0 +1,62 @@
+[
+    {
+        "id" : "FIR1660375824785",
+        "nombre" : "David",
+        "apellidoPaterno" : "Figueroa",
+        "apellidoMaterno" : "Rodriguez",
+        "genero" : "Masculino",
+        "rfc" : "FIR166032F31",
+        "telCasa" : 4775247306,
+        "telMovil" : 4775247306,
+        "correo" : "david.figueroar0777@gmail.com",
+        "estatus" : "Activo"
+    },
+    {
+        "id" : "VAG1660375991249",
+        "nombre" : "Paulo",
+        "apellidoPaterno" : "Valadez",
+        "apellidoMaterno" : "Gomez",
+        "genero" : "Masculino",
+        "rfc" : "VAG921029U72",
+        "telCasa" : 4771234567,
+        "telMovil" : 4771234567,
+        "correo" : "pualo123@gmail.com",
+        "estatus" : "Activo"
+    },
+    {
+        "id" : "ULM1660376045294",
+        "nombre" : "Daiana",
+        "apellidoPaterno" : "Ulloa",
+        "apellidoMaterno" : "Mendoza",
+        "genero" : "Femenino",
+        "rfc" : "ULM726192I82",
+        "telCasa" : 4771234567,
+        "telMovil" : 4771234567,
+        "correo" : "daiprincess123@gmail.com",
+        "estatus" : "Activo"
+    },
+    {
+        "id" : "CEQ16603757795694",
+        "nombre" : "Maximiliano",
+        "apellidoPaterno" : "Ceballos",
+        "apellidoMaterno" : "Quintana",
+        "genero" : "Masculino",
+        "rfc" : "CEQ628192Y37",
+        "telCasa" : 4771234567,
+        "telMovil" : 4771234567,
+        "correo" : "matscool123@gmail.com",
+        "estatus" : "Activo"
+    },
+    {
+        "id" : "RAB1660376013329",
+        "nombre" : "Carlos",
+        "apellidoPaterno" : "Ramírez",
+        "apellidoMaterno" : "Bello",
+        "genero" : "Masculino",
+        "rfc" : "RAB560987H32",
+        "telCasa" : 4771234567,
+        "telMovil" : 4771234567,
+        "correo" : "matscool123@gmail.com",
+        "estatus" : "Activo"
+    }
+]

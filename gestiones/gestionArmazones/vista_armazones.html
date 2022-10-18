@@ -1,0 +1,180 @@
+<div class="container-fluid  p-4  pb-0">
+    <div class="container-fluid rounded-3 border ">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="" id="seccion">Gestion Armazones</h1>
+            </div>
+            <div class="col-md-4 ">
+                <nav aria-label="breadcrumb" style="margin-top: 4%;">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="inicio.html">Inicio</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Armazones</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid  p-4">
+    <div class="container-fluid  rounded-3 border shadow-lg p-3">
+        <div class="col-md-12p-3">
+            <div class="container overflow-auto">
+                <button type="button" id="btn-form" class="btn btn-outline-dark" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Editar datos</button>
+                <br>
+                <br>
+                <table id="datos" class="table table-hover" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Código de barras</th>
+                            <th>Nombre</th>
+                            <th>Marca</th>
+                            <th>Modelo</th>
+                            <th>Color</th>
+                            <th>Descripcion</th>
+                            <th>Dimensiones</th>
+                            <th>Precio de compra</th>
+                            <th>Precio de venta</th>
+                            <th>Existencias</th>
+                            <th>Fotografia</th>
+                            <th>Estatus</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody_armazones">
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Código de barras</th>
+                            <th>Nombre</th>
+                            <th>Marca</th>
+                            <th>Modelo</th>
+                            <th>Color</th>
+                            <th>Descripcion</th>
+                            <th>Dimensiones</th>
+                            <th>Precio de compra</th>
+                            <th>Precio de venta</th>
+                            <th>Existencias</th>
+                            <th>Fotografia</th>
+                            <th>Estatus</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<!--ELEMENTOS DESPLEGABLES-->
+
+<!--Ventana de confirmacion de eliminacion-->
+
+<div class="modal fade" id="modal-confirmacionEliminar" tabindex="-1" aria-labelledby="VentanaConfirmacion"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">¿Seguro que quieres eliminar este elemento?</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>El estatus del armazon cambiara a Inactivo</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" id="confirmarEliminar" class="btn btn-primary"
+                    data-bs-dismiss="modal">Confirmar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Fin de la ventana de confirmacion-->
+<!--FORMULARIO LATERAL DE DATOS-->
+<div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" data-bs-backdrop="static"
+    tabindex="-1" id="offcanvasRight" aria-labelledby="formularioOffcanvas">
+    <div class="offcanvas-header container-fluid bg-dark align-items-center text-light" id="opciones-formulario">
+        <h5 class="offcanvas-title" id="titulo-formularioOffcanvas">Datos
+        </h5>
+        <button type="button" data-bs-dismiss="offcanvas" class="btn btn-danger" id="cerrarFormulario">Cerrar</button>
+    </div>
+    <div class="offcanvas-body">
+        <form id="formDatos" class="needs-validation" novalidate>
+
+            <button type="button" id="btn-agregar" class="btn btn-outline-success">Agregar</button>
+            <button type="button" id="btn-modificar" class="btn btn-outline-primary">Modificar</button>
+            <button type="button" id="btn-eliminar" class="btn btn-outline-danger" data-bs-toggle="modal"
+                data-bs-target="#modal-confirmacionEliminar">Eliminar</button>
+            <button type="button" class="btn btn-primary" id="limpiarFormulario">Limpiar</button>
+            <br>
+
+            <tbody>
+                <tr>
+                    <th scope="row"><label for="inputNombre" class="form-label">Nombre</label></th>
+                    <th><input type="text" class="form-control" id="inputNombre" aria-describedby="Nombre"
+                         maxlength="45" required>
+                    </th>
+                </tr>
+                <tr>
+                    <th scope="row"><label for="inputMarca" class="form-label">Marca</label></th>
+                    <th><input type="text" class="form-control" id="inputMarca" aria-describedby="Nombre"
+                            onkeypress="return soloLetras(event);" maxlength="45" required>
+                    </th>
+                </tr>
+                <tr>
+                    <th scope="row"><label for="inputModelo" class="form-label">Modelo</label></th>
+                    <th><input type="text" class="form-control" id="inputModelo" aria-describedby="Nombre"
+                             maxlength="45">
+                    </th>
+                </tr>
+                <tr>
+                    <th scope="row"><label for="inputColor" class="form-label">Color</label></th>
+                    <th><input type="text" class="form-control" id="inputColor" aria-describedby="Nombre"
+                            onkeypress="return soloLetras(event);" maxlength="45" required>
+                    </th>
+                </tr>
+                <th scope="row"><label for="inputDescripcion" class="form-label">Descripción</label>
+                </th>
+                <th>
+                    <textarea class="form-control" id="inputDescripcion" rows="1"
+                     maxlength="100" required></textarea>
+                </th>
+                <tr>
+                    <th scope="row"><label for="inputDimensiones" class="form-label">Dimensiones</label></th>
+                    <th><input type="text" class="form-control" id="inputDimensiones" aria-describedby="Nombre"
+                            onkeypress="return soloDimensiones(event);" maxlength="45" required>
+                    </th>
+                </tr>
+                <tr>
+                    <th scope="row"><label for="inputPrecioC" class="form-label">Precio de compra</label></th>
+                    <th><input type="text" class="form-control" id="inputPrecioC" aria-describedby="Nombre"
+                            onkeypress="return soloNumeros(event);" maxlength="6" required>
+                    </th>
+                </tr>
+                <tr>
+                    <th scope="row"><label for="inputPrecioV" class="form-label">Precio de venta</label></th>
+                    <th><input type="text" class="form-control" id="inputPrecioV" aria-describedby="Nombre"
+                            onkeypress="return soloNumeros(event);" maxlength="6" required>
+                    </th>
+                </tr>
+                <tr>
+                    <th scope="row"><label for="inputExistencias" class="form-label">Existencias</label>
+                    </th>
+                    <th><input type="text" class="form-control" id="inputExistencias" aria-describedby=""
+                            onkeypress="return soloNumeros(event);" maxlength="6" required></th>
+                </tr>
+                <tr>
+                    <th scope="row"><label for="inputFotografia" class="form-label">Fotografia</label></th>
+                    <th><input type="text" class="form-control" id="inputFotografia" aria-describedby="Nombre"
+                         required>
+                    </th>
+                </tr>
+            </tbody>
+            </table>
+        </form>
+
+    </div>
+</div>
+<script src="controlador_armazones.js" type="module"></script>
+<!--FIN DE ELEMENTOS DESPLEGABLES-->

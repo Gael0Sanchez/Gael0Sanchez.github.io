@@ -1,0 +1,181 @@
+<div class="container-fluid  p-4  pb-0">
+    <div class="container-fluid rounded-3 border ">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="" id="seccion">Gestion Empleados</h1>
+            </div>
+            <div class="col-md-4 ">
+                <nav aria-label="breadcrumb" style="margin-top: 4%;">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="inicio.html">Inicio</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Empleados</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid  p-4">
+    <div class="container-fluid  rounded-3 border shadow-lg p-3">
+        <div class="col-md-12p-3">
+            <div class="container overflow-auto">
+                <button type="button" id="btn-form" class="btn btn-outline-dark" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Editar datos</button>
+                <br>
+                <br>
+                <table id="datos" class="table table-hover" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Número único</th>
+                            <th>Nombre</th>
+                            <th>Apellido paterno</th>
+                            <th>Apellido materno</th>
+                            <th>Genero</th>
+                            <th>RFC</th>
+                            <th>Telefono de casa</th>
+                            <th>Telefono móvil</th>
+                            <th>Correo</th>
+                            <th>Usuario</th>
+                            <th>Contraseña</th>
+                            <th>Estatus</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody_empleados">
+
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Número único</th>
+                            <th>Nombre</th>
+                            <th>Apellido paterno</th>
+                            <th>Apellido materno</th>
+                            <th>Genero</th>
+                            <th>RFC</th>
+                            <th>Telefono de casa</th>
+                            <th>Telefono móvil</th>
+                            <th>Correo</th>
+                            <th>Usuario</th>
+                            <th>Contraseña</th>
+                            <th>Estatus</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<!--ELEMENTOS DESPLEGABLES-->
+
+<!--Ventana de confirmacion de eliminacion-->
+
+<div class="modal fade" id="modal-confirmacionEliminar" tabindex="-1" aria-labelledby="VentanaConfirmacion"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">¿Seguro que quieres eliminar este elemento?</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>El estatus del empleado cambiara a Inactivo</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" id="confirmarEliminar" class="btn btn-primary"
+                    data-bs-dismiss="modal">Confirmar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Fin de la ventana de confirmacion-->
+<!--FORMULARIO LATERAL DE DATOS-->
+<div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" data-bs-backdrop="static"
+    tabindex="-1" id="offcanvasRight" aria-labelledby="formularioOffcanvas">
+    <div class="offcanvas-header container-fluid bg-dark align-items-center text-light" id="opciones-formulario">
+        <h5 class="offcanvas-title" id="titulo-formularioOffcanvas">Datos
+        </h5>
+        <button type="button" data-bs-dismiss="offcanvas" class="btn btn-danger" id="cerrarFormulario">Cerrar</button>
+    </div>
+    <div class="offcanvas-body">
+        <form id="formDatos" class="needs-validation" novalidate>
+
+            <button type="button" id="btn-agregar" class="btn btn-outline-success">Agregar</button>
+            <button type="button" id="btn-modificar" class="btn btn-outline-primary">Modificar</button>
+            <button type="button" id="btn-eliminar" class="btn btn-outline-danger" data-bs-toggle="modal"
+                data-bs-target="#modal-confirmacionEliminar">Eliminar</button>
+            <button type="button" class="btn btn-primary" id="limpiarFormulario">Limpiar</button>
+            <br>
+
+            <tbody>
+                <tr>
+                    <th scope="row"><label for="inputNombre" class="form-label">Nombre</label></th>
+                    <th><input type="text" class="form-control" id="inputNombre" aria-describedby="Nombre"
+                            onkeypress="return soloLetras(event);" maxlength="45" required>
+                    </th>
+                </tr>
+                <tr>
+                    <th scope="row"><label for="inputApellidoPaterno" class="form-label">Apellido paterno</label></th>
+                    <th><input type="text" class="form-control" id="inputApellidoPaterno" aria-describedby="Nombre"
+                            onkeypress="return soloLetras(event);" maxlength="45" required>
+                    </th>
+                </tr>
+                <tr>
+                    <th scope="row"><label for="inputApellidoMaterno" class="form-label">Apellido materno</label></th>
+                    <th><input type="text" class="form-control" id="inputApellidoMaterno" aria-describedby="Nombre"
+                            onkeypress="return soloLetras(event);" maxlength="45">
+                    </th>
+                </tr>
+                <tr>
+                    <th scope="row"><label for="inputGenero" class="form-label">Género</label></th>
+                    <th><select class="form-select" aria-label="GeneroSelect" id="inputGenero" required>
+                            <option selected disabled value="">...</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Femenino">Femenino</option>
+                            <option value="Otro">Otro</option>
+                        </select></th>
+                </tr>
+                <tr>
+                    <th scope="row"><label for="inputRfc" class="form-label">RFC</label></th>
+                    <th><input type="text" class="form-control" id="inputRfc" aria-describedby="" minlength="13"
+                            maxlength="14" required></th>
+                </tr>
+                <tr>
+                    <th scope="row"><label for="inputTelCasa" class="form-label">Telefono de casa</label>
+                    </th>
+                    <th><input type="text" class="form-control" id="inputTelCasa" aria-describedby=""
+                            onkeypress="return soloNumeros(event);" minlength="10" maxlength="10" required></th>
+                </tr>
+                <tr>
+                    <th scope="row"><label for="inputTelMovil" class="form-label">Telefono movil</label>
+                    </th>
+                    <th><input type="text" class="form-control" id="inputTelMovil" aria-describedby=""
+                            onkeypress="return soloNumeros(event);" minlength="10" maxlength="10" required></th>
+                </tr>
+                <tr>
+                    <th scope="row"><label for="inputCorreo" class="form-label">Correo</label>
+                    </th>
+                    <th><input type="email" class="form-control" id="inputCorreo" aria-describedby="" required></th>
+                </tr>
+                <tr>
+                    <th scope="row"><label for="inputUsuario" class="form-label">Usuario</label>
+                    </th>
+                    <th><input type="text" class="form-control" id="inputUsuario" aria-describedby=""
+                            onkeypress="return soloLetras(event);" maxlength="16" required></th>
+                </tr>
+                <tr>
+                    <th scope="row"><label for="inputPassword" class="form-label">Contraseña</label>
+                    </th>
+                    <th><input type="password" class="form-control" id="inputPassword" aria-describedby=""
+                         maxlength="16" required></th>
+                </tr>
+            </tbody>
+            </table>
+        </form>
+
+    </div>
+</div>
+<script src="controlador_empleados.js" type="module"></script>
+<!--FIN DE ELEMENTOS DESPLEGABLES-->
